@@ -12,7 +12,9 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connect kra h yh 
-mongoose.connect("mongodb+srv://Prashant:Prashant76...@cluster0.rmv79da.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://prashant:prashant123@backend.pfbokck.mongodb.net/backend")
+.then(() => console.log("✅ DB CONNECTED"))
+.catch(err => console.log("❌ DB ERROR:", err));
 
 // password dusri wali gmail ka lagaya h ..
 
